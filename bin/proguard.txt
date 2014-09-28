@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:52
+-keep class net.machina.projekty.jquery001.jquery001 { <init>(...); }
+

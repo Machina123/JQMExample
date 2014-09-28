@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+        <!-- ładowanie jQuery Mobile -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+        <title>Aplikacja</title>
+        <script>
+            db = localStorage;
+            $(document).ready(function () {
+                $("#btnLogin").click(function () {
+                    db.setItem("name", $("#inpLogin").val());
+                    alert("Login pomyślny!");
+                });
+
+                $("#btnLogout").click(function () {
+                    alert("Logout pomyślny");
+                    db.removeItem("name");
+                    db.setItem("lastlogin", new Date().toLocaleString());
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- Strona logowania -->
+        <div id="login" data-role="page" data-position="fixed">
+            <div data-role="header">
+                <h1>Witaj!</h1>
+            </div>
+            <div data-role="content">
+                <label>Podaj swoje imię: 
+                    <input type="text" id="inpLogin" />
+                </label>
+                <a href="#pageMain" data-role="button" id="btnLogin">Zaloguj</a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h1> </h1>
+            </div> 
+        </div>
+
+        <!-- Strona główna -->
+        <div id="pageMain" data-role="page" data-position="fixed">
+            <div data-role="header">
+                <h1>Witaj!</h1>
+                <div id="menu" data-role="navbar">
+                    <ul>
+                        <li><a href="#pageMain" class="ui-btn-active">Strona główna</a></li>
+                        <li><a href="#pageSet">Ustawienia</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <div id="welcome"></div>
+                <script>
+                    db = localStorage;
+                    $("#pageMain").on("pageshow", function () {
+                        //console.log(localStorage)
+                        $("#welcome").html("Witaj <strong>" + db.getItem("name") + "</strong>! Ostanie logowanie: <strong>" + db.getItem("lastlogin") + "</strong>");
+                    });
+                </script>
+                
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <a href="#login" data-role="button" data-icon="delete" data-iconpos="left" id="btnLogout">Wyloguj</a>
+            </div>
+        </div>
+
+        <!-- Strona ustawień -->
+        <div id="pageSet" data-role="page" data-position="fixed">
+            <div data-role="header">
+                <h1>Witaj!</h1>
+                <div id="menu" data-role="navbar">
+                    <ul>
+                        <li><a href="#pageMain">Strona główna</a></li>
+                        <li><a href="#pageSet" class="ui-btn-active">Ustawienia</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <script>
+                    db = localStorage;
+                </script>
+
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <a href="#login" data-role="button" data-icon="delete" data-iconpos="left" id="btnLogout">Wyloguj</a>
+            </div>
+        </div>
+    </body>
+</html>

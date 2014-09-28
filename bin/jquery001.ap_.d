@@ -1,0 +1,26 @@
+D:\Android\Projekty\jquery001\bin\jquery001.ap_ \
+ : D:\Android\Projekty\jquery001\res\drawable\icon.png \
+D:\Android\Projekty\jquery001\res\drawable-hdpi\icon.png \
+D:\Android\Projekty\jquery001\res\drawable-hdpi\ic_launcher.png \
+D:\Android\Projekty\jquery001\res\drawable-ldpi\icon.png \
+D:\Android\Projekty\jquery001\res\drawable-ldpi\ic_launcher.png \
+D:\Android\Projekty\jquery001\res\drawable-mdpi\icon.png \
+D:\Android\Projekty\jquery001\res\drawable-mdpi\ic_launcher.png \
+D:\Android\Projekty\jquery001\res\drawable-xhdpi\icon.png \
+D:\Android\Projekty\jquery001\res\drawable-xhdpi\ic_launcher.png \
+D:\Android\Projekty\jquery001\res\layout\main.xml \
+D:\Android\Projekty\jquery001\res\values\strings.xml \
+D:\Android\Projekty\jquery001\res\xml\config.xml \
+D:\Android\Projekty\jquery001\bin\res\drawable\icon.png \
+D:\Android\Projekty\jquery001\bin\res\drawable-hdpi\icon.png \
+D:\Android\Projekty\jquery001\bin\res\drawable-hdpi\ic_launcher.png \
+D:\Android\Projekty\jquery001\bin\res\drawable-ldpi\icon.png \
+D:\Android\Projekty\jquery001\bin\res\drawable-ldpi\ic_launcher.png \
+D:\Android\Projekty\jquery001\bin\res\drawable-mdpi\icon.png \
+D:\Android\Projekty\jquery001\bin\res\drawable-mdpi\ic_launcher.png \
+D:\Android\Projekty\jquery001\bin\res\drawable-xhdpi\icon.png \
+D:\Android\Projekty\jquery001\bin\res\drawable-xhdpi\ic_launcher.png \
+D:\Android\Projekty\jquery001\assets\www \
+D:\Android\Projekty\jquery001\assets\www\cordova.js \
+D:\Android\Projekty\jquery001\assets\www\index.html \
+D:\Android\Projekty\jquery001\bin\AndroidManifest.xml \
